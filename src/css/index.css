@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.slider {
+    width: 310px;
+    height: 500px;
+    background-color: pink;
+    margin: 100px auto;
+}
+#slider_main {
+    position: relative;
+    height: 220px;
+    /* background-color: skyblue; */
+    overflow: hidden;
+}
+#slider_main div {
+    position: absolute;
+    left: -310px;
+    /* transition: all 1s; */
+}
+#slider_main div:first-child {
+    left: 0;
+}
+
+#ctrl_btns {
+    display: flex;
+    justify-content: space-around;
+}
+#ctrl_btns li {
+    border: 1px solid;
+    cursor: pointer;
+}
+/* .nextMove {
+    animation: nextMove 3s 
+}
+@keyframes nextMove {
+	0%{ left: 320px }
+    30%{ left: 0 }
+    100%{ left: 0 }
+} */
